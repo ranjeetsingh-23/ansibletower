@@ -6,4 +6,4 @@
       command: hostname
       register: host
     - debug:
-        msg: System uptime is {{ host }}
+        msg: System hostname  is {{ host }}
