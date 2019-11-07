@@ -3,7 +3,7 @@
   become: yes
   tasks:
     - name: check system uptime
-      command: hostname
+      command: uptime
       register: host
     - debug:
-        msg: System hostname  is {{ host }}
+        msg: System uptime  is {{ host }}
